@@ -16,6 +16,7 @@
 		81E226742B3681A6007BE6AF /* MKWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E226732B3681A6007BE6AF /* MKWebViewTests.swift */; };
 		81E2267E2B3681A6007BE6AF /* MKWebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2267D2B3681A6007BE6AF /* MKWebViewUITests.swift */; };
 		81E226802B3681A6007BE6AF /* MKWebViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E2267F2B3681A6007BE6AF /* MKWebViewUITestsLaunchTests.swift */; };
+		AAC35A90BDA452B282CF5466 /* Pods_MKWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB62DFAAD2889CFD739C439 /* Pods_MKWebView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EB62DFAAD2889CFD739C439 /* Pods_MKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E226592B3681A4007BE6AF /* MKWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MKWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E2265C2B3681A4007BE6AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E2265E2B3681A4007BE6AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		81E226792B3681A6007BE6AF /* MKWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MKWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E2267D2B3681A6007BE6AF /* MKWebViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKWebViewUITests.swift; sourceTree = "<group>"; };
 		81E2267F2B3681A6007BE6AF /* MKWebViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKWebViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8F90D1C4759D5D8D3578AF4D /* Pods-MKWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKWebView.debug.xcconfig"; path = "Target Support Files/Pods-MKWebView/Pods-MKWebView.debug.xcconfig"; sourceTree = "<group>"; };
+		9C0924BF0E1B0DF268959854 /* Pods-MKWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKWebView.release.xcconfig"; path = "Target Support Files/Pods-MKWebView/Pods-MKWebView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAC35A90BDA452B282CF5466 /* Pods_MKWebView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				81E226722B3681A6007BE6AF /* MKWebViewTests */,
 				81E2267C2B3681A6007BE6AF /* MKWebViewUITests */,
 				81E2265A2B3681A4007BE6AF /* Products */,
+				D3A7B07770563585708536F4 /* Pods */,
+				A32348663D790526B2522B2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +134,24 @@
 			path = MKWebViewUITests;
 			sourceTree = "<group>";
 		};
+		A32348663D790526B2522B2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EB62DFAAD2889CFD739C439 /* Pods_MKWebView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3A7B07770563585708536F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F90D1C4759D5D8D3578AF4D /* Pods-MKWebView.debug.xcconfig */,
+				9C0924BF0E1B0DF268959854 /* Pods-MKWebView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +159,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81E226832B3681A6007BE6AF /* Build configuration list for PBXNativeTarget "MKWebView" */;
 			buildPhases = (
+				CC918E203141E9DC62C834D2 /* [CP] Check Pods Manifest.lock */,
 				81E226552B3681A4007BE6AF /* Sources */,
 				81E226562B3681A4007BE6AF /* Frameworks */,
 				81E226572B3681A4007BE6AF /* Resources */,
+				AD4435DE1F36F2727E57217E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AD4435DE1F36F2727E57217E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MKWebView/Pods-MKWebView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC918E203141E9DC62C834D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MKWebView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81E226552B3681A4007BE6AF /* Sources */ = {
@@ -437,6 +504,7 @@
 		};
 		81E226842B3681A6007BE6AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F90D1C4759D5D8D3578AF4D /* Pods-MKWebView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +532,7 @@
 		};
 		81E226852B3681A6007BE6AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C0924BF0E1B0DF268959854 /* Pods-MKWebView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
